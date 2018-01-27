@@ -1,0 +1,24 @@
+{
+  "name": "poc_tarificateur",
+  "version": "1.0.0",
+  "description": "PoC Tarificateur NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielgasnot/poc_tarificateur.git"
+  },
+  "keywords": [
+    "poc",
+    "tarificateur",
+    "node.js"
+  ],
+  "author": "Gabriel GASNOT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielgasnot/poc_tarificateur/issues"
+  },
+  "homepage": "https://github.com/gabrielgasnot/poc_tarificateur#readme"
+}
