@@ -21,24 +21,38 @@ BDD de test :
 * Exécuter la commande : 
 > npm install
 
+# Commandes
+
+Démarrer le serveur (clear dist + tsc watch + nodemon start)
+> npm run start
+
+Compiler le typescript
+> npm run build
+
+Compiler + activer le watcher (compilation typescript on the fly)
+> npm run watch:build
+
 # Structure du projet
 
-Point de départ : 
-> srv/index.js
+* Répertoire "dist/" contient les fichiers JS compilés depuis Typescript.
+* Répertoire "src/" contient les fichiers TS
+
+* Point de départ : 
+> src/index.ts
  
 ## Répertoires
 
-* srv/migrations
+* src/migrations
 > Pour les tests : scripts de déploiement d'une BDD de test + valeurs
 > Pour un projet : si ORM, scripts de seeding + migrations
 
-* srv/models
+* src/models
 > Modules de classes (avec ou sans lien BDD) 
 
-* srv/helpers
+* src/helpers
 > Modules de logiques communes (manipulation de dates, ...)
 
-* srv/controllers
+* src/controllers
 > Contient un répertoire par controller.
 > Chaque répertoire contient :
 > * routes.js : module des routes du controller
