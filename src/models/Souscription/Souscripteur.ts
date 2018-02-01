@@ -1,10 +1,13 @@
 export class Souscripteur {
-    public Age : number;
-    public Anciennete : number;
+  public Age: number;
+  public Anciennete: number;
+  public CodePostal: string;
+  public Ville: string;
 
-    constructor(age, anciennete) {
-        this.Age = age;
-        this.Anciennete = anciennete;
-    }
+  constructor(age, anciennete, codePostal, ville) {
+    this.Age = age;
+    this.Anciennete = anciennete;
+    this.CodePostal = codePostal;
+    this.Ville = ville;
+  }
 }
-
