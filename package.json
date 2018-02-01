@@ -2,14 +2,14 @@
   "name": "poc_tarificateur",
   "version": "1.0.0",
   "description": "PoC Tarificateur NodeJs",
-  "main": "srv/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
     "watch:build": "npm run clean && tsc --watch",
     "watch:server": "nodemon './dist/index.js' --watch './dist'",
-    "start": "npm run clean && tsc --watch && npm run watch:server --print-label"
+    "start": "npm run clean && tsc && nodemon"
   },
   "repository": {
     "type": "git",
